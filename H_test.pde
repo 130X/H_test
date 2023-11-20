@@ -13,11 +13,13 @@ color hoverOverColour=resetColour;
 String start="Start", stop="STOP", quit="X";
 PFont buttonFont;  
 Boolean measlesON=false;
-  void setup() {
+  //
+void setup() {
   size(800, 600);
   appWidth = width;
   appHeight = height;
   smallerDimension = (appWidth >= appHeight) ? appHeight : appWidth;
+  println("smaller Dimension is", smallerDimension);
   //
   //Population
   faceX = appWidth*1/2;
